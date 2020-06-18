@@ -11,12 +11,16 @@ var cell0 = document.getElementById("table").rows[0].cells[0];
 
 var rows = document.getElementById("table").rows;
 
+
+
 for (var i = 0; i < 3; i++) {
-    for (var j = 0; j <3; j++) {
-        rows[i].cells[i].onclick = function(){console.log("hi")};
+    for (var j = 0; j < 3; j++) {
+        var x = rows[i].cells[j];
+        x.onclick = function(){
+        x.innerHTML = "NEW CONTENT" 
              };
         };
-    
+    };
 
 
 function restart() {
