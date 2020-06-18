@@ -11,16 +11,21 @@ var cell0 = document.getElementById("table").rows[0].cells[0];
 
 var rows = document.getElementById("table").rows;
 
+for (var i = 0; i < 3; i++) {
+    for (var j = 0; j <3; j++) {
+        rows[i].cells[i].onclick = function(){console.log("hi")};
+             };
+        };
+    
 
 
 function restart() {
    // document.getElementById("table").reset();  
    for (var i = 0; i < 3; i++) {
     for (var j = 0; j <3; j++) {
-        rows[i].cells[j] = " ";
-        console.log(rows[i].cells[j])
-    }
-}
-  }
+        rows[i].cells[j].textContent  = " ";
+        console.log(rows[i].cells[j]);
+     };
+    };
+  };
 
-// var row3 = document.getElementById("table").rows[2].cells.length;
